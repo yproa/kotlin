@@ -1,5 +1,4 @@
 import kotlin.concurrent.thread
-import kotlin.system.measureTimeMillis
 import java.util.concurrent.locks.ReentrantLock
 
 fun main(args: Array<String>){
