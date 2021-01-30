@@ -4,7 +4,7 @@ import java.util.concurrent.locks.ReentrantLock
 fun main(args: Array<String>){
     val lock = ReentrantLock()
     val thread1 = thread {
-        for(i in 1..10){
+        for(i in 0..10){
             //lock.lock();//Оставил на случай если спроосите как их разделить
             if(i%2==0){
                 println(i)
@@ -14,7 +14,7 @@ fun main(args: Array<String>){
         }
     }
     val thread2 = thread {
-        for(i in 1..10){
+        for(i in 0..10){
             //lock.lock();
             if(i%2!=0){
                 println(i)
